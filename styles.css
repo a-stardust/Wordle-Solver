@@ -122,19 +122,4 @@ text-align: center;
     font-size: 15px;
     color: gray;
   }
-  @media screen and (max-width: 600px) {
-    .button-container {
-      flex-direction: column;
-    }
-  
-    .button-container button {
-      margin-right: 0;
-      margin-bottom: 6px;
-      height: 40px;
-      font-size: 12px;
-    }
-  
-    .created-by {
-      font-size: 12px;
-    }
-  }
+ 
