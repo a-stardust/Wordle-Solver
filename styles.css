@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  #container {
+    display: flex;
+    background-color: black;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #game {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    border-bottom: 1px solid rgb(58, 58, 60);
+  }
+  
+  .title {
+    color: gainsboro;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.4rem 0 0.4rem 0;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .heading {
+    color: gainsboro;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.6rem 0 0.6rem 0;
+    text-align: left;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  #board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  
+  #button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  } 
+  
+  #button-container button {
+    font-family: inherit;
+    font-weight: bold;
+    min-width: 100px;
+    border: 0;
+    padding: 0;
+    height: 48px;
+    cursor: pointer;
+    background-color: rgb(129, 131, 132);
+    color: rgb(215, 218, 220);
+    flex-grow: 1;
+    text-transform: uppercase;
+    margin-right: 6px;
+    margin-bottom: 7px;
+    border-radius: 4px;
+    user-select: none;
+  } 
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .square {
+    border: 2px solid rgb(58, 58, 60);
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: gainsboro;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spacer-half {
+    flex-grow: 0.5;
+  }
+  .created-by {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 15px;
+    color: gray;
+  }
+  @media screen and (max-width: 600px) {
+    .button-container {
+      flex-direction: column;
+    }
+  
+    .button-container button {
+      margin-right: 0;
+      margin-bottom: 6px;
+      height: 40px;
+      font-size: 12px;
+    }
+  
+    .created-by {
+      font-size: 12px;
+    }
+  }
