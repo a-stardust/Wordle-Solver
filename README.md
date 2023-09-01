@@ -1,2 +1,2 @@
-# Wordle-Solver
+# MeowMeow
 still under development stage
