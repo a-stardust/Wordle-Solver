@@ -48,6 +48,15 @@
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
+.created-by {
+  bottom: 10px;
+  left: 100px;
+    margin: 0.4rem 0 0.4rem 0;
+
+text-align: center;
+  font-size: 14px;
+  color: gray;
+}
   
   #board-container {
     display: flex;
